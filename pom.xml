@@ -92,6 +92,16 @@
             <artifactId>atlassian-bamboo-web</artifactId>
             <version>${bamboo.version}</version>
             <scope>provided</scope>
+            <exclusions>
+                <exclusion>
+                    <groupId>com.octo.captcha</groupId>
+                    <artifactId>jcaptcha</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>com.octo.captcha</groupId>
+                    <artifactId>jcaptcha-api</artifactId>
+                </exclusion>
+            </exclusions>
         </dependency>
         <dependency>
             <groupId>javax.servlet</groupId>
